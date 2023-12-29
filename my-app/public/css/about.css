@@ -1,0 +1,39 @@
+.about {
+    max-width: 1200px;
+    padding: 20px;
+    line-height: 1.5;
+    margin: auto;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-img img {
+    border-radius: 10px;
+}
+.about-heading h1  {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 14px;
+}
+
+@media only screen and (max-width: 767px) {
+    .about-heading h1 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .about-img {
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+}
